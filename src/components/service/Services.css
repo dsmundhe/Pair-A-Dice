@@ -1,0 +1,99 @@
+body {
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Services Container */
+.services-container {
+  height: 90vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  padding: 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  animation: fadeIn 1.5s ease; /* Add fade-in animation */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+/* Services List */
+.services-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Service Card */
+.service-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s; /* Transition for scale and shadow */
+  opacity: 0; /* Start with invisible cards */
+  animation: slideIn 0.5s forwards; /* Add slide-in animation */
+}
+
+/* Animation for each card */
+@keyframes slideIn {
+  0% {
+    transform: translateY(20px); /* Start slightly below */
+    opacity: 0; /* Fully transparent */
+  }
+  100% {
+    transform: translateY(0); /* Move to original position */
+    opacity: 1; /* Fully visible */
+  }
+}
+
+/* Hover Effect */
+.service-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.service-card h2 {
+  margin: 10px 0;
+  color: #e5e0e0;
+}
+
+.service-card p {
+  color: #cac4c4;
+}
+
+.service-link {
+  text-decoration: none; /* Remove underline */
+  color: #007bff; /* Link color */
+}
+
+.ser {
+  color: white;
+}
+
+/* Animation Delay for Cards */
+.service-card:nth-child(1) { animation-delay: 0.1s; }
+.service-card:nth-child(2) { animation-delay: 0.2s; }
+.service-card:nth-child(3) { animation-delay: 0.3s; }
+.service-card:nth-child(4) { animation-delay: 0.4s; }
+.service-card:nth-child(5) { animation-delay: 0.5s; }
+.service-card:nth-child(6) { animation-delay: 0.6s; }

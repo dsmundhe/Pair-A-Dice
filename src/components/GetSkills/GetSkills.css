@@ -1,0 +1,192 @@
+body {
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Keyframes for Animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Start slightly lower */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* End at original position */
+  }
+}
+
+/* Hero Section */
+.hero {
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  url("https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: center;
+  background-size: cover;
+  animation: fadeInUp 1s ease-in-out; /* Apply animation */
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.755);
+}
+
+/* About and Contact Section */
+.about {
+  background-color: #f8f9fa;
+  padding: 60px 20px;
+  text-align: center;
+  animation: fadeInUp 1s ease-in-out 0.5s; /* Apply animation */
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* Sponsors Section */
+.sponsors {
+  padding: 40px 20px;
+  background-color: #f3f3f3;
+  text-align: center;
+  animation: fadeInUp 1s ease-in-out 1s; /* Apply animation */
+}
+
+.sponsors h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.sponsor-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.sponsor-card {
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.sponsor-card img {
+  max-width: 100px; /* Set a max width for sponsor logos */
+  margin-bottom: 10px;
+}
+
+.sponsor-card p {
+  color: #666;
+}
+
+.sponsor-card:hover {
+  box-shadow: 2px 2px 25px rgba(172, 255, 47, 0.788);
+  border: 0.5px solid black;
+}
+
+/* Footer */
+footer {
+  background-color: #0077b6;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+footer ul li {
+  margin: 0;
+}
+
+footer ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+  color: #90e0ef;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .course-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+.btns button {
+  margin-top: 15px;
+  width: 150px;
+  border-radius: 20px;
+  padding: 10px 0;
+  border: 1px solid white;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  margin-left: 5px;
+}
+
+.btns button span {
+  width: 0;
+  height: 100%;
+  background-color: rgb(250, 220, 138);
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 20px;
+  transition: 0.5s;
+  z-index: -1;
+}
+
+.btns button:hover span {
+  width: 100%;
+}
+
+.btns button:hover {
+  border: none;
+  color: #000000;
+  font-weight: 500;
+}
+
+.hero h1 span {
+  color: wheat;
+}

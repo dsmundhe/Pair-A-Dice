@@ -1,0 +1,82 @@
+ .signup{
+    background: linear-gradient(135deg, #6E85B2, #B2C8DF);
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+ }
+.signup-container {
+    width: 650px; /* Maximum width for the container */
+     padding: 20px;
+    background-color:rgba(255, 255, 255, 0.956); /* Light background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center; /* Center text */
+}
+
+.signup-container h2 {
+    font-size: 2em; /* Heading font size */
+    margin-bottom: 20px; /* Margin below heading */
+    color: #333; /* Heading color */
+}
+
+.signup-form {
+    display: flex; /* Flexbox for form layout */
+    flex-direction: column; /* Stack form elements vertically */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Space between form groups */
+}
+
+.form-group label {
+    display: block; /* Block display for labels */
+    margin-bottom: 5px; /* Margin below label */
+    text-align: left; /* Align text to the left */
+}
+
+.form-group input {
+    width: 100%; /* Full width for input fields */
+    padding: 10px; /* Padding for inputs */
+    border: 1px solid #ccc; /* Border style */
+    border-radius: 5px; /* Rounded corners for inputs */
+    font-size: 1em; /* Font size for inputs */
+}
+
+.signup-button {
+    background-color: #5c67f2; /* Button color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    padding: 10px 15px; /* Button padding */
+    border-radius: 5px; /* Rounded corners for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1em; /* Button font size */
+    transition: background-color 0.3s ease; /* Transition for hover effect */
+}
+
+.signup-button:hover {
+    background-color: #4a54e1; /* Darker button color on hover */
+}
+
+p {
+    margin-top: 20px; /* Margin above paragraph */
+    color: #666; /* Text color */
+}
+
+p a {
+    color: #5c67f2; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+}
+
+p a:hover {
+    text-decoration: underline; /* Underline on hover for links */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .signup-container {
+        width: 90%; /* Full width on smaller screens */
+        padding: 15px; /* Reduced padding for smaller screens */
+    }
+}

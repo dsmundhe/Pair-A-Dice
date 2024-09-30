@@ -1,0 +1,136 @@
+/* General Styles for the Contact Section */
+#contact {
+  padding: 25px 20px;
+  background-color: rgba(245, 222, 179, 0.303);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 1.5s ease-in-out; /* Add fade-in animation */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Start lower */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* End at original position */
+  }
+}
+
+#contact h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+#contact p {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  color: #060606;
+  text-align: center;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+#contact h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #0072ff;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+/* Contact Form Styles */
+.contact-form {
+  width: 100%;
+  max-width: 800px;
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  animation: slideIn 0.5s ease; /* Add slide-in animation */
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px); /* Start higher */
+    opacity: 0; /* Start invisible */
+  }
+  to {
+    transform: translateY(0); /* End at original position */
+    opacity: 1; /* End visible */
+  }
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+  outline: none;
+  transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover and Focus Effects on Input Fields */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border: 1px solid #0072ff;
+  box-shadow: 0 0 8px rgba(0, 114, 255, 0.3);
+}
+
+.contact-form textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+/* Submit Button Styles */
+.contact-form button {
+  padding: 15px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #0b1e36;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, transform 0.3s ease; /* Add transition for scaling */
+}
+
+.contact-form button:hover {
+  background-color: #3d3f43;
+  box-shadow: 0 5px 15px rgba(0, 86, 217, 0.4);
+  transform: scale(1.05); /* Slightly scale the button on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #contact h2 {
+    font-size: 2rem;
+  }
+
+  #contact h3 {
+    font-size: 1.5rem;
+  }
+
+  .contact-form {
+    padding: 15px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.9rem;
+    padding: 12px;
+  }
+}

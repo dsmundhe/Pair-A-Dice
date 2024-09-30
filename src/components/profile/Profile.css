@@ -1,0 +1,61 @@
+/* Profile Container */
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center content vertically */
+  height: 90vh; /* Full viewport height */
+  padding: 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #6b11cba3, #2574fc94, #f5deb3); /* Updated linear gradient with wheat color */
+  color: rgb(255, 255, 255); /* Change text color for contrast */
+  animation: fadeIn 1.5s ease-in-out; /* Add fade-in animation */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px); /* Start lower */
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0); /* End at original position */
+  }
+}
+
+/* Profile Image */
+.profile-image {
+  border-radius: 50%; /* Circular image */
+  width: 150px; /* Image size */
+  height: 150px; /* Image size */
+  object-fit: cover; /* Crop image to fit */
+  margin-bottom: 15px; /* Space below the image */
+  animation: scaleUp 0.5s ease; /* Add scale effect */
+}
+
+/* Scale effect for the profile image */
+@keyframes scaleUp {
+  from {
+      transform: scale(0.8); /* Start smaller */
+  }
+  to {
+      transform: scale(1); /* End at original size */
+  }
+}
+
+h1 {
+  margin: 10px 0; /* Space above and below the name */
+  color: #000000; /* Name color */
+}
+
+.profile-email {
+  color: #000000; /* Lighter color for email */
+  margin-bottom: 10px; /* Space below email */
+}
+
+.profile-bio {
+  color: #060606; /* Bio color */
+  max-width: 500px; /* Limit bio width */
+  font-weight: 500;
+}

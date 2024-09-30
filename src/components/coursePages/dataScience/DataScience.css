@@ -1,0 +1,51 @@
+.data-science-container {
+    padding: 20px;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.course-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.course-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px; /* Adjust the width as needed */
+    transition: transform 0.3s;
+}
+
+.course-card:hover {
+    transform: scale(1.05);
+}
+
+.course-image {
+    width: 100%;
+    height: 200px; /* Fixed height for uniformity */
+    object-fit: cover;
+}
+
+.course-details {
+    padding: 15px;
+}
+
+.course-title {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+.course-description {
+    font-size: 1rem;
+    color: #666;
+}
