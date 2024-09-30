@@ -8,7 +8,7 @@ function About() {
         <div className="about-content">
           <h2>About Us</h2>
           <p>
-            We are <span>Lokesh Chaudhary</span> and <span>Kshitij Hatwar</span>, students of the ETC Department at <span>GHRCE Nagpur</span>. 
+            We are <span>Aashvi Tekade</span> and <span>Dipak Mundhe</span>, students of the C-Tech Department at <span>YCCE Nagpur</span>. 
             This webpage is our project for the Web Development Minor, designed to showcase our skills and earn 5 marks in the TAE-2 assessment.
           </p>
         </div>
