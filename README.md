@@ -1,6 +1,6 @@
- # getSkills
+# getSkills
 
-**getSkills** is an educational platform designed to help users find courses for different tech skills. This project is built to provide a wide range of learning resources, from beginner to advanced levels, across various technology domains.
+**getSkills** is an educational platform designed to help users find courses for different tech skills. This platform offers courses across various domains, helping learners acquire skills from trusted sources in the tech industry.
 
 ## Table of Contents
 
@@ -15,20 +15,21 @@
 
 ## Features
 
-- Browse and search for tech skills courses in various domains such as programming, web development, data science, and more.
-- Categorized courses based on difficulty levels: Beginner, Intermediate, Advanced.
-- User-friendly interface to explore and select desired courses.
-- Courses come from trusted and popular platforms.
-- Course links with detailed descriptions and ratings.
+- Browse and search for courses related to various tech skills.
+- Courses are categorized by difficulty level: Beginner, Intermediate, Advanced.
+- Seamless navigation across pages with React Router.
+- Responsive design for an optimized experience across all devices.
+- Course links with descriptions and ratings from trusted platforms.
+- State management using Redux for a smooth user experience.
 
 ## Technologies Used
 
-- **Frontend**: React.js, HTML5, CSS3, JavaScript
-- **Backend**: Node.js, Express.js
-- **Database**: MongoDB
-- **State Management**: Redux
-- **Version Control**: Git and GitHub
-- **API Integration**: RESTful API for fetching course data
+- **React.js** - Frontend framework for building user interfaces
+- **Redux** - For state management
+- **React Router** - For routing and navigation
+- **HTML5** - For structuring the content
+- **CSS3** - For styling the application
+- **JavaScript** - For adding interactivity
 
 ## Installation
 
@@ -37,4 +38,4 @@ To run this project locally, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/getSkills.git
+   git clone https://github.com/dsmundhe/Pair-A-Dice.git
